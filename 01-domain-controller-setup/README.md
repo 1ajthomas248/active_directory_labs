@@ -6,7 +6,6 @@ The objective of this lab is to deploy and configure a **Windows Server–based 
 
 This lab emphasizes correct networking configuration, Active Directory Domain Services (AD DS) installation, DNS integration, and real-world troubleshooting encountered during domain controller promotion.
 
----
 
 ### Environment Overview
 
@@ -18,9 +17,7 @@ This lab emphasizes correct networking configuration, Active Directory Domain Se
 - **Administrator Account:** `corp\dc-admin`  
 - **Networking:** Azure Virtual Network with static private IP  
 
----
-
-## Step 1: Create Resource Group
+### Step 1: Create Resource Group
 
 Create a dedicated resource group to isolate all Active Directory lab resources.
 
@@ -29,9 +26,7 @@ Name:
 
 <img width="512" height="288" alt="image" src="https://github.com/user-attachments/assets/2cc9a6d7-fcef-4dfa-8ea3-657fc80654ce" />
 
----
-
-## Step 2: Create Virtual Network and Subnet
+### Step 2: Create Virtual Network and Subnet
 
 Create a virtual network to simulate an internal corporate network.
 
@@ -47,9 +42,7 @@ My Configuration:
 
 <img width="512" height="288" alt="image" src="https://github.com/user-attachments/assets/19f9c7d9-7a25-42e9-bc46-22a597515d86" />
 
----
-
-## Step 3: Deploy Windows Server VM
+### Step 3: Deploy Windows Server VM
 
 Create a Windows Server 2022 virtual machine that will be promoted to a Domain Controller.
 
@@ -70,9 +63,7 @@ Settings:
 <img width="512" height="288" alt="image" src="https://github.com/user-attachments/assets/dead7654-9745-4fc9-b963-d1335701126d" />
 <img width="512" height="288" alt="image" src="https://github.com/user-attachments/assets/f580b5ba-18cf-489b-b5ba-96ac6f1bd9dd" />
 
----
-
-## Step 4: Configure Static Private IP
+### Step 4: Configure Static Private IP
 
 Active Directory requires a stable IP address for DNS reliability:
 
@@ -82,9 +73,7 @@ Active Directory requires a stable IP address for DNS reliability:
 
 <img width="512" height="288" alt="image" src="https://github.com/user-attachments/assets/63d57bd0-cf86-4577-a88f-0e9de82c841c" />
 
----
-
-## Step 5: Install Active Directory Domain Services
+### Step 5: Install Active Directory Domain Services
 
 Connect to the VM via RDP and install the AD DS role:
 
@@ -98,9 +87,7 @@ Connect to the VM via RDP and install the AD DS role:
 
 <img width="512" height="288" alt="image" src="https://github.com/user-attachments/assets/86a1fe4c-fe55-4e66-9d9a-7b82ad024c61" />
 
----
-
-## Step 6: Promote Server to Domain Controller
+### Step 6: Promote Server to Domain Controller
 
 Promote the server to a Domain Controller and create a new forest.
 
@@ -118,9 +105,7 @@ Configuration:
 
 <img width="512" height="288" alt="image" src="https://github.com/user-attachments/assets/585c039e-e0db-4883-b3d6-20db538734c4" />
 
----
-
-## Step 7: Verify Domain Controller Functionality
+### Step 7: Verify Domain Controller Functionality
 
 After reboot, validate the installation:
 
@@ -133,8 +118,7 @@ After reboot, validate the installation:
 <img width="512" height="288" alt="image" src="https://github.com/user-attachments/assets/038d58ab-c412-42ab-afe9-e2f4769748c4" />
 <img width="512" height="288" alt="image" src="https://github.com/user-attachments/assets/c5af9c6f-cc8d-4b58-ad62-578daa8872de" />
 
----
-
 ### Conclusion and Key Takeways
 
 This lab successfully established a fully functional Active Directory Domain Controller in a Microsoft Azure environment, providing a stable and realistic foundation for future identity and access management labs. By configuring proper networking, installing Active Directory Domain Services with integrated DNS, and validating domain authentication, this environment now mirrors a common enterprise on-premises directory deployment. This will serve as a great foundation to build off of for the future AD labs I will be conducting.
+
