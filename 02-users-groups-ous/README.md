@@ -1,11 +1,9 @@
 # Lab 02: Active Directory – Users, Groups, and Organizational Units
 
-## Overview
+### Overview
 This lab focuses on managing **users, security groups, and organizational units (OUs)** within an Active Directory domain. These objects form the foundation of identity management, access control, and policy enforcement in enterprise Windows environments.
 
 The goal of this lab is to gain hands-on experience with core administrative tasks that system administrators perform daily when managing a Windows domain.
-
----
 
 ### Objectives
 By completing this lab, I was able to:
@@ -17,15 +15,11 @@ By completing this lab, I was able to:
 - Understand the functional differences between OUs and groups
 - Verify Active Directory changes using built-in tools and PowerShell
 
----
-
 ### Prerequisites
 - Windows Server installed
 - Active Directory Domain Services (AD DS) installed
 - Server promoted to a Domain Controller
 - Logged in as a domain administrator account
-
----
 
 ### Lab Environment
 - **Server OS**: Windows Server
@@ -33,9 +27,7 @@ By completing this lab, I was able to:
 - **Domain**: `corp.local`
 - **Administrative Tool**: Active Directory Users and Computers (ADUC)
 
----
-
-## Step 1: Open Active Directory Users and Computers
+### Step 1: Open Active Directory Users and Computers
 
 Log into the Domain Controller
 
@@ -46,7 +38,7 @@ Navigate to:
 
 <img width="512" height="288" alt="image" src="https://github.com/user-attachments/assets/8831889b-24ab-4193-825a-0134a897bbfd" />
 
-## Step 2: Create Organizational Units (OUs)
+### Step 2: Create Organizational Units (OUs)
 
 Right-click the domain → New → Organizational Unit
 
@@ -57,7 +49,7 @@ Repeat for each OU listed above
 <img width="512" height="288" alt="image" src="https://github.com/user-attachments/assets/a7c0d61a-aa08-46d2-8810-222d11d42616" />
 <img width="512" height="288" alt="image" src="https://github.com/user-attachments/assets/6802ce77-1f78-4f37-b477-3fbbcd8abf83" />
 
-## Step 3: Create User Accounts
+### Step 3: Create User Accounts
 
 Right-click the appropriate OU → New → User
 
@@ -71,7 +63,7 @@ Set a password
 
 <img width="512" height="288" alt="image" src="https://github.com/user-attachments/assets/10a0b417-bb72-444a-ac05-86d4372d9250" />
 
-## Step 4: Create Security Groups
+### Step 4: Create Security Groups
 
 Right-click the OU → New → Group
 
@@ -85,7 +77,7 @@ Select:
 
 <img width="512" height="288" alt="image" src="https://github.com/user-attachments/assets/6f4907bd-cb58-49f6-9578-b480ed804385" />
 
-## Step 5: Add Users to Groups
+### Step 5: Add Users to Groups
 
 Right-click a group → Properties
 
@@ -97,7 +89,7 @@ Select the appropriate user
 
 <img width="512" height="288" alt="image" src="https://github.com/user-attachments/assets/df9224e9-2a43-4948-b7e7-dcbf48d11e42" />
 
-## Step 6: Verify Configuration
+### Step 6: Verify Configuration
 
 Confirm:
 
@@ -114,8 +106,6 @@ Get-ADGroupMember IT-Users
 ```
 
 <img width="512" height="288" alt="image" src="https://github.com/user-attachments/assets/22648dea-965a-4a58-a596-67c1bedb321c" />
-
----
 
 ### Key takeways and Conclusion
 
